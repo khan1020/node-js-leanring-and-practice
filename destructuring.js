@@ -8,3 +8,4 @@ obj = {
 let {a, b,d} = obj;
 
 console.log(d);
+// Nested object destructuring with default fallback values
