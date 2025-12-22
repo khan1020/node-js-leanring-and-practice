@@ -25,3 +25,5 @@ function aboutAfzal() {
 // This way other files can require it and call aboutAfzal() without revealing other stuff.
 // If love could be exported like this, the world would be a happier place 😄
 module.exports = { aboutAfzal };
+
+// module.exports vs exports shortcut alias comparison note
