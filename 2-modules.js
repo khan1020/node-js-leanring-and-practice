@@ -25,3 +25,5 @@ moduules.students("Javed");
 // The 'animal' variable was exported, so we can now use it here
 console.log(moduules.animal); // Lion (yes, we are still in the jungle 🦁)
 
+
+// CommonJS module caching mechanism: require caches evaluation result
