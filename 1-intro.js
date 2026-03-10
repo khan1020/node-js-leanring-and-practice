@@ -31,3 +31,5 @@ module.exports = { students, animal };
 // const { students, animal } = require('./thisFile');
 // students("Afzal");  // Hello, dear Afzal
 // console.log(animal); // Lion
+
+// Reviewed Node runtime event loop architecture on v20 LTS
