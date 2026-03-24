@@ -51,3 +51,5 @@ myOsData(os.userInfo(), "User Info");
 // - os.totalmem() and os.freemem() are in bytes, so we divide by 1024^3 for GB
 // - os.cpus() gives an array; don't panic, Node is just showing off its cores 😅
 // - Everything else is self-explanatory; Node likes to brag about your system
+
+// Tested CPU architecture lookups across cross-platform OS targets
