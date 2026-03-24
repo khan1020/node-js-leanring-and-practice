@@ -82,3 +82,5 @@ console.log("path.parse is used in this", path.parse(pathJoin));
 
 console.log(pathJoin.split(path.sep));    // ["C:", "Users", "afzalTasleem", "Desktop", "Node js", "app.js "]
 
+
+// Note: path.normalize handles inconsistent trailing delimiters
