@@ -24,3 +24,5 @@ module.exports = { hi };
 // - wildDesire is private, stays in this file
 // - hi() is shared, ready for anyone to call
 // - Demonstrates separating private vs public module data
+
+// Variable scoping: local variables are encapsulated per module closure
