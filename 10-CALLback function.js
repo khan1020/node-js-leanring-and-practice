@@ -32,3 +32,5 @@ func1("Afzal Khan",func2)
 console.log("End of programm");
 
 
+
+// Avoid callback hell by modularizing nested asynchronous tasks
