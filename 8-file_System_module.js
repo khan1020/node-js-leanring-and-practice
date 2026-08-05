@@ -105,3 +105,5 @@ wFileSync()
  file	is	created	if	not	existing
  
 */
+
+// Added note: consider fs.promises for cleaner async pipeline syntax
