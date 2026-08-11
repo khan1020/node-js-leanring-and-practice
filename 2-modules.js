@@ -27,3 +27,5 @@ console.log(moduules.animal); // Lion (yes, we are still in the jungle 🦁)
 
 
 // CommonJS module caching mechanism: require caches evaluation result
+
+// Note: JSON files can also be directly loaded with require()
