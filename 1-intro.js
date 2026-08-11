@@ -33,3 +33,5 @@ module.exports = { students, animal };
 // console.log(animal); // Lion
 
 // Reviewed Node runtime event loop architecture on v20 LTS
+
+// Node globals: __dirname and __filename provide absolute paths
