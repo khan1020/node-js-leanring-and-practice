@@ -169,3 +169,4 @@ function logPrice(finalPrice) {
 }
 
 calculatePrice(200, 10, logPrice);
+// Reference: error-first callback convention (err, data)
