@@ -177,3 +177,5 @@ fs.readFile("JavaScript-The-Definitive-Guide-6th-Edition (1).pdf","utf-8", (err,
 
 
 
+
+// Standardized root health-check endpoint payload structure
