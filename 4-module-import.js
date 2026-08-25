@@ -21,3 +21,5 @@ myImported.hi("Afzal");    // Prints greeting
 // 2. Watch for duplicate function names — last one wins 😅
 
 // Destructured imports ensure clean namespace boundaries
+
+// Core modules do not require relative path prefixes like './'
