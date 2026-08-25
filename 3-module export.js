@@ -27,3 +27,5 @@ function aboutAfzal() {
 module.exports = { aboutAfzal };
 
 // module.exports vs exports shortcut alias comparison note
+
+// Exporting class constructors vs object factory methods
