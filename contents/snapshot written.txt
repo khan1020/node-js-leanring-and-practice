@@ -1,0 +1,10 @@
+this is Async🖥️ System Snapshot for AfzalTAS
+----------------------------------------
+Platform       : win32
+Architecture   : x64
+CPU Cores      : 12
+Total Memory   : 15680.00 MB
+Uptime         : 18462.91 minutes
+Resolved Path  : C:\Users\AfzalTAS\Desktop\node js\snapshot.txt
+
+

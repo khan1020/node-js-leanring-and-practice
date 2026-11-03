@@ -1,0 +1,16 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "main": "11-streams.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-status-monitor": "^1.3.4"
+  },
+  "description": ""
+}

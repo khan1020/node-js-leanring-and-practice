@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Student CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Student CRUD</h1>
+
+    <!-- ADD STUDENT -->
+    <div class="form">
+      <h2>Add Student</h2>
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="text" id="lastName" placeholder="Last Name">
+      <input type="number" id="age" placeholder="Age">
+      <button id="addBtn">Add Student</button>
+    </div>
+
+    <!-- STUDENT LIST -->
+    <div class="list">
+      <h2>All Students</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Love Life</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

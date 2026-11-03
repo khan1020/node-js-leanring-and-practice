@@ -1,0 +1,28 @@
+# Environment variables (Credentials & MongoDB strings)
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Large media files
+*.mp4
+*.mkv
+*.avi
+
+# Python cache & FAISS vector files
+__pycache__/
+*.pyc
+faiss_index.bin*
+paragraphs.pkl
+*.pkl
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+tempCodeRunnerFile.*

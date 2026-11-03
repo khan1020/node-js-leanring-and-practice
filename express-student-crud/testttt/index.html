@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send to Backend</title>
+</head>
+<body>
+
+    <h2>Add Student</h2>
+
+    <input type="text" id="name" placeholder="Enter name"><br><br>
+    <input type="number" id="age" placeholder="Enter age"><br><br>
+
+    <button onclick="sendData()">Send</button>
+
+    <p id="result"></p>
+
+    <script>
+        function sendData() {
+            const name = document.getElementById("name").value;
+            const age = document.getElementById("age").value;
+
+            fetch("http://localhost:3000/api/student/testttt", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name: name,
+                    age: age
+                })
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("result").innerText =
+                    "Server Response: " + JSON.stringify(data);
+            });
+        }
+    </script>
+
+</body>
+</html>

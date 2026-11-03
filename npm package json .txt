@@ -1,0 +1,33 @@
+npm install <packageName> // installes a package or module in local project directory only accessed by that specific project
+
+
+npm install -g <packageName> // installes a package or module in global directory all projects can access
+
+npm uninstall <packageName> // uninstalls named package
+
+package.json:
+	it is a manifest file which stores important data of project eg: version, dependencies, modules used in etcetra
+
+three ways to configure package.json:
+	
+	i.   manual way: create a file name it "package.json"
+	ii.  npm init : step by step add data and keep pressing enter
+	iii. npm init -y: add everything default you can change data based om your needs
+
+installing all modules from package.json dependcy:
+	
+	npm i nodemon -d
+	or
+	npm i nodemon --save-dev
+
+	so above both commands will install required modules that or in package.json dependcies
+
+
+run package.json scripts:
+
+	to run package.json scriptis first we need to add script files in package.json
+
+	"scripts":{
+			"start":"fileName.js"}
+
+	to run above script we need to run this command in terminal : npm start

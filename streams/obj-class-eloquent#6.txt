@@ -1,0 +1,129 @@
+JavaScript OOP – Quick Notes (Exam Style)
+1. Objects
+
+Definition: Collection of key-value pairs (data + functions).
+
+Example:
+
+let rabbit = { type: "white", speak: () => console.log("Hi") };
+rabbit.speak(); // → Hi
+
+2. Methods
+
+Definition: Function inside an object.
+
+let cat = { meow: () => console.log("Meow!") };
+cat.meow(); // → Meow!
+
+3. Prototype
+
+Definition: Object shared among instances for methods.
+
+let proto = { speak: () => console.log("Hello") };
+let r = Object.create(proto);
+r.speak(); // → Hello
+
+4. Class & Constructor
+
+Definition:
+
+Class = blueprint.
+
+Constructor = sets initial properties.
+
+class Rabbit {
+  constructor(type) { this.type = type; }
+  speak() { console.log(this.type + " speaks"); }
+}
+new Rabbit("killer").speak(); // → killer speaks
+
+5. Inheritance (extends)
+
+Definition: Child class gets parent properties/methods.
+
+class Animal { speak() { console.log("Noise"); } }
+class Dog extends Animal { speak() { console.log("Bark"); } }
+new Dog().speak(); // → Bark
+
+6. Private Properties
+
+Definition: Hidden inside class using #.
+
+class Secret { #msg = "Hidden"; reveal() { return this.#msg; } }
+console.log(new Secret().reveal()); // → Hidden
+
+7. Map
+
+Definition: Key-value store; keys can be any type.
+
+let ages = new Map();
+ages.set("Ali", 20);
+console.log(ages.get("Ali")); // → 20
+
+8. Polymorphism
+
+Definition: Same method, different objects.
+
+Rabbit.prototype.toString = function() { return this.type; };
+console.log(String(new Rabbit("red"))); // → red
+
+9. Getters / Setters / Static
+class Temp {
+  constructor(c) { this.c = c; }
+  get f() { return this.c*1.8+32; }
+  set f(val) { this.c = (val-32)/1.8; }
+  static info() { return "Temp class"; }
+}
+let t = new Temp(0);
+console.log(t.f);  // → 32
+t.f = 212;         
+console.log(t.c);  // → 100
+console.log(Temp.info()); // → Temp class
+
+10. Iterators
+
+Definition: Lets objects be used in for..of.
+
+let str = "OK";
+for (let c of str) console.log(c); // → O, K
+
+
+Custom Iterable:
+
+class List { constructor(v,n=null){this.v=v;this.n=n;}
+  [Symbol.iterator](){let c=this;return{next(){if(!c)return{done:true};let val=c.v;c=c.n;return{value:val,done:false};}}}
+}
+for(let i of new List(1,new List(2))) console.log(i); // → 1, 2
+
+11. instanceof
+
+Definition: Checks if object is instance of class.
+
+class A{} class B extends A{}
+let b = new B();
+console.log(b instanceof B); // → true
+console.log(b instanceof A); // → true
+
+✅ Exam Tips
+
+Objects = data + functions.
+
+Methods = object functions.
+
+Prototype = shared methods.
+
+Constructor = initializes object.
+
+Inheritance = reuse code.
+
+Private = hide data.
+
+Map = key-value pairs.
+
+Polymorphism = same method, different objects.
+
+Get/Set = controlled property access.
+
+Iterator = loop custom objects.
+
+instanceof = check type.
